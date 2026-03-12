@@ -1,34 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - GEO Auditor</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #3c4043; }
-        h1 { color: #1a73e8; border-bottom: 1px solid #dadce0; padding-bottom: 10px; }
-        .box { background: #f8f9fa; border: 1px solid #dadce0; padding: 25px; border-radius: 8px; margin-top: 20px; }
-        code { background: #e8eaed; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
-        footer { margin-top: 40px; font-size: 0.8em; color: #70757a; text-align: center; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — GEO Auditor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: #1a73e8;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .meta {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .meta strong { color: #1a1a1a; }
+
+    section {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1a73e8;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e8f0fe;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin: 18px 0 8px;
+    }
+
+    p { margin-bottom: 12px; color: #333; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .badge-green  { background: #e6f4ea; color: #1e7e34; }
+    .badge-blue   { background: #e8f0fe; color: #1a73e8; }
+    .badge-orange { background: #fef3e2; color: #b45309; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #1a73e8;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #ececec;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f8f9fa; }
+
+    .highlight {
+      background: #e8f0fe;
+      border-left: 4px solid #1a73e8;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 14px 0;
+      font-size: 0.95rem;
+      color: #174ea6;
+    }
+
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p><strong>Extension:</strong> GEO Auditor</p>
-    <p><strong>Last Updated:</strong> March 9, 2026</p>
 
-    <div class="box">
-        <p>GEO Auditor is committed to ensuring that your privacy is protected.</p>
-        <ul>
-            <li><strong>Data Collection:</strong> We do not collect, store, or transmit any personal identification information.</li>
-            <li><strong>Data Processing:</strong> Page content is analyzed locally or sent to a private secure proxy (Cloudflare Worker) controlled by the developer.</li>
-            <li><strong>Third-Party Sharing:</strong> No data is shared with third parties or advertisers.</li>
-            <li><strong>Local Storage:</strong> Audit history and user preferences are stored locally in your browser via <code>chrome.storage.local</code>.</li>
-        </ul>
+<header>
+  <h1>Privacy Policy</h1>
+  <p>GEO Auditor — Chrome Extension</p>
+</header>
+
+<main>
+
+  <div class="meta">
+    <strong>Last updated:</strong> March 2026 &nbsp;·&nbsp;
+    <strong>Version:</strong> 1.0.0 &nbsp;·&nbsp;
+    <strong>Contact:</strong> <a href="mailto:geo-auditor@proton.me">geo-auditor@proton.me</a>
+  </div>
+
+  <!-- 1. Overview -->
+  <section>
+    <h2>1. Overview</h2>
+    <p>GEO Auditor is a free Chrome extension that analyzes the active web page to evaluate its visibility score in generative AI search platforms (ChatGPT, Gemini, Perplexity, Claude, and others).</p>
+    <p>This policy describes what data is collected, how it is used, and your rights as a user.</p>
+    <div class="highlight">
+      GEO Auditor does <strong>not</strong> collect personal data, does <strong>not</strong> track your browsing, and does <strong>not</strong> sell any data to third parties.
     </div>
+  </section>
 
-    <footer>
-        &copy; 2026 GEO Auditor Developer - All Rights Reserved.
-    </footer>
+  <!-- 2. Data collected -->
+  <section>
+    <h2>2. Data Collected</h2>
+
+    <h3>2.1 Data processed locally <span class="badge badge-green">Stays on your device</span></h3>
+    <ul>
+      <li>Text content of the active web page (headings, paragraphs, JSON-LD schemas)</li>
+      <li>URL and domain of the active page</li>
+      <li>Results of previous audits (stored via <code>chrome.storage.local</code>)</li>
+    </ul>
+
+    <h3>2.2 Data sent to the publisher's proxy <span class="badge badge-blue">Ephemeral</span></h3>
+    <p>To deliver certain features, the following data is transmitted to a Cloudflare Worker proxy operated by the publisher. This proxy relays requests to external APIs:</p>
+    <table>
+      <thead>
+        <tr><th>Data transmitted</th><th>Destination API</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Domain only (e.g., example.com)</td><td>OpenPageRank, SerpAPI, Reddit API, Wikipedia API</td><td>Authority scoring and citation counting</td></tr>
+        <tr><td>Page text content</td><td>Groq API</td><td>Semantic analysis of the page content</td></tr>
+      </tbody>
+    </table>
+    <p>The proxy does <strong>not</strong> retain any data. All requests are ephemeral and non-logged.</p>
+
+    <h3>2.3 Data NOT collected <span class="badge badge-green">Never</span></h3>
+    <ul>
+      <li>Personal information (name, email, IP address)</li>
+      <li>Browsing history</li>
+      <li>Cookies or session data</li>
+      <li>Form data or credentials</li>
+      <li>User identifiers of any kind</li>
+    </ul>
+  </section>
+
+  <!-- 3. Use of data -->
+  <section>
+    <h2>3. Use of Data</h2>
+    <p>Collected data is used exclusively to:</p>
+    <ul>
+      <li>Calculate the GEO score of the analyzed page</li>
+      <li>Display optimization recommendations</li>
+      <li>Maintain a local audit history</li>
+    </ul>
+    <p>Data is <strong>never</strong> sold, shared with third parties for commercial purposes, or used for advertising.</p>
+  </section>
+
+  <!-- 4. Storage & security -->
+  <section>
+    <h2>4. Storage &amp; Security</h2>
+    <ul>
+      <li>Audit history is stored locally in your browser via <code>chrome.storage.local</code></li>
+      <li>This data remains on your device and is not synchronized with external servers</li>
+      <li>You can delete the history at any time from the extension interface</li>
+      <li>All communications with the proxy are encrypted via HTTPS</li>
+    </ul>
+  </section>
+
+  <!-- 5. Permissions -->
+  <section>
+    <h2>5. Chrome Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why it is needed</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>activeTab</code></td>
+          <td>Read the URL and content of the active tab when the user triggers an audit</td>
+        </tr>
+        <tr>
+          <td><code>scripting</code></td>
+          <td>Extract DOM content from the active page (headings, schemas, text)</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>Save audit history locally in the browser</td>
+        </tr>
+        <tr>
+          <td><code>sidePanel</code></td>
+          <td>Display the audit panel alongside the page</td>
+        </tr>
+        <tr>
+          <td><code>&lt;all_urls&gt;</code></td>
+          <td>Fetch <code>/robots.txt</code> and <code>/llms.txt</code> from any audited domain, and communicate with the Cloudflare Worker proxy. Required because the audited domain is chosen by the user at runtime.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. Third-party services -->
+  <section>
+    <h2>6. Third-Party Services</h2>
+    <p>The extension uses the following third-party services, each subject to its own privacy policy:</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Groq</td><td>Semantic content analysis</td><td><a href="https://groq.com/privacy" target="_blank">groq.com/privacy</a></td></tr>
+        <tr><td>OpenPageRank</td><td>Domain authority score</td><td><a href="https://openpagerank.com/privacy" target="_blank">openpagerank.com/privacy</a></td></tr>
+        <tr><td>SerpAPI</td><td>Perplexity citation count via Google</td><td><a href="https://serpapi.com/privacy" target="_blank">serpapi.com/privacy</a></td></tr>
+        <tr><td>Reddit API</td><td>Domain mention count on Reddit</td><td><a href="https://www.reddit.com/policies/privacy-policy" target="_blank">reddit.com/policies/privacy-policy</a></td></tr>
+        <tr><td>Wikipedia API</td><td>Wikipedia inbound links count</td><td><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">wikimedia.org privacy policy</a></td></tr>
+        <tr><td>Cloudflare Workers</td><td>Proxy infrastructure</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 7. User rights -->
+  <section>
+    <h2>7. Your Rights</h2>
+    <p>In accordance with GDPR and applicable laws, you have the following rights:</p>
+    <ul>
+      <li><strong>Right of access:</strong> view your audit history directly in the extension</li>
+      <li><strong>Right to deletion:</strong> clear your history from the extension interface at any time</li>
+      <li><strong>Right to object:</strong> uninstall the extension to stop all processing</li>
+    </ul>
+  </section>
+
+  <!-- 8. Contact -->
+  <section>
+    <h2>8. Contact</h2>
+    <p>For any questions regarding this privacy policy, please contact: <a href="mailto:geo-auditor@proton.me">geo-auditor@proton.me</a></p>
+  </section>
+
+  <!-- 9. Changes -->
+  <section>
+    <h2>9. Changes to This Policy</h2>
+    <p>This policy may be updated. In the event of a material change, a notice will be displayed in the extension interface. The last updated date is shown at the top of this page.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>GEO Auditor &mdash; Privacy Policy &mdash; Last updated March 2026</p>
+</footer>
+
 </body>
 </html>
