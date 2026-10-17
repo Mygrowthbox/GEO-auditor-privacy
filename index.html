@@ -1,242 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — GEO Auditor</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #f8f9fa; }
-    header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: #fff; padding: 52px 24px 44px; text-align: center; }
-    header h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 8px; }
-    header p { font-size: 1rem; opacity: 0.85; }
-    .toc { max-width: 800px; margin: 32px auto 0; padding: 20px 28px; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; }
-    .toc h2 { font-size: 0.9rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
-    .toc ol { padding-left: 20px; }
-    .toc li { margin-bottom: 4px; }
-    .toc a { color: #1a73e8; text-decoration: none; font-size: 0.95rem; }
-    .toc a:hover { text-decoration: underline; }
-    main { max-width: 800px; margin: 24px auto; padding: 0 24px 80px; }
-    .meta { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 20px; margin-bottom: 24px; font-size: 0.88rem; color: #555; }
-    .meta strong { color: #1a1a1a; }
-    .summary { background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; padding: 20px 24px; margin-bottom: 24px; }
-    .summary h2 { color: #2e7d32; font-size: 1rem; margin-bottom: 10px; }
-    .summary ul { padding-left: 18px; }
-    .summary li { margin-bottom: 5px; font-size: 0.95rem; color: #1b5e20; }
-    section { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 28px 32px; margin-bottom: 20px; }
-    h2 { font-size: 1.1rem; font-weight: 700; color: #1a73e8; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #e8f0fe; }
-    h3 { font-size: 1rem; font-weight: 600; color: #333; margin: 18px 0 8px; }
-    p { margin-bottom: 12px; color: #333; }
-    p:last-child { margin-bottom: 0; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    ul li { margin-bottom: 6px; color: #333; }
-    ol { padding-left: 20px; margin-bottom: 12px; }
-    ol li { margin-bottom: 8px; color: #333; }
-    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
-    th { background: #1a73e8; color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
-    td { padding: 10px 14px; border-bottom: 1px solid #ececec; vertical-align: top; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px 20px 60px; color: #1a1a1a; line-height: 1.7; }
+    h1 { color: #1a73e8; font-size: 1.8rem; margin-bottom: 4px; }
+    .meta { color: #888; font-size: 0.85rem; margin-bottom: 32px; }
+    h2 { color: #1a73e8; font-size: 1.15rem; margin-top: 40px; border-bottom: 1px solid #e8eaf6; padding-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
+    th { background: #e8f0fe; color: #1a73e8; text-align: left; padding: 8px 12px; }
+    td { border-bottom: 1px solid #f0f0f0; padding: 8px 12px; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
-    tr:nth-child(even) td { background: #f8f9fa; }
-    .highlight { background: #e8f0fe; border-left: 4px solid #1a73e8; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 14px 0; font-size: 0.95rem; color: #174ea6; }
-    .warning { background: #fef3e2; border-left: 4px solid #f9ab00; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 14px 0; font-size: 0.95rem; color: #7a4f00; }
-    code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; font-family: monospace; }
-    a { color: #1a73e8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 32px 24px; font-size: 0.85rem; color: #888; }
+    .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+    .note { background: #f8f9fa; border-left: 3px solid #1a73e8; padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 0.88rem; margin: 16px 0; }
+    a { color: #1a73e8; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    nav.toc { background: #f8f9fa; border: 1px solid #e8eaf6; border-radius: 8px; padding: 16px 20px; margin: 24px 0; font-size: 0.88rem; }
+    nav.toc h3 { margin: 0 0 10px; font-size: 0.9rem; color: #1a73e8; font-weight: 600; }
+    nav.toc ol { margin: 0; padding-left: 18px; }
+    nav.toc li { margin-bottom: 3px; }
+    nav.toc a { text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Privacy Policy</h1>
-  <p>GEO Auditor — Chrome Extension &nbsp;·&nbsp; Version 1.0</p>
-</header>
+<h1>Privacy Policy</h1>
+<div class="meta">GEO Auditor — Chrome Extension v1.1.0 &nbsp;·&nbsp; Last updated: October 2026</div>
 
-<div class="toc">
-  <h2>Contents</h2>
+<nav class="toc">
+  <h3>Table of Contents</h3>
   <ol>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#collection">Data Collection</a></li>
-    <li><a href="#processing">Data Processing</a></li>
-    <li><a href="#storage">Data Storage</a></li>
-    <li><a href="#sharing">Data Sharing</a></li>
-    <li><a href="#consent">User Consent</a></li>
-    <li><a href="#offline">Offline Mode</a></li>
-    <li><a href="#permissions">Chrome Permissions</a></li>
-    <li><a href="#third-parties">Third-Party Services</a></li>
-    <li><a href="#rights">Your Rights</a></li>
-    <li><a href="#changes">Changes to This Policy</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#s1">Overview</a></li>
+    <li><a href="#s2">Data Collection</a></li>
+    <li><a href="#s3">Data Processing</a></li>
+    <li><a href="#s4">Score Calculation</a></li>
+    <li><a href="#s5">Data Storage</a></li>
+    <li><a href="#s6">Data Sharing</a></li>
+    <li><a href="#s7">User Consent</a></li>
+    <li><a href="#s8">Offline Mode</a></li>
+    <li><a href="#s9">Chrome Permissions</a></li>
+    <li><a href="#s10">Third-Party Services</a></li>
+    <li><a href="#s11">Your Rights (GDPR)</a></li>
+    <li><a href="#s12">Changes to This Policy</a></li>
+    <li><a href="#s13">Contact</a></li>
   </ol>
+</nav>
+
+<div class="note">
+  <strong>TL;DR</strong> — GEO Auditor collects only the domain name and page text of the page you choose to analyze, only when you click "Analyze". No personal data. No background tracking. Audit results stay on your device. You can enable Offline Mode to prevent all external API calls.
 </div>
 
-<main>
+<h2 id="s1">1. Overview</h2>
+<p>GEO Auditor is a free Chrome extension that estimates the likelihood of a web page being cited by AI-powered search engines (ChatGPT, Perplexity, Gemini, etc.). It produces a score out of 100 across five dimensions and generates actionable recommendations.</p>
+<p>We do not collect personal information, track your browsing, or sell any data. The extension operates on an explicit opt-in basis: analysis only starts when you press "Analyze".</p>
 
-  <div class="meta">
-    <strong>Last updated:</strong> March 2026 &nbsp;·&nbsp;
-    <strong>Applies to:</strong> GEO Auditor Chrome Extension v1.0.0
-  </div>
+<h2 id="s2">2. Data Collection</h2>
+<p><strong>Data collected on demand (when you click "Analyze"):</strong></p>
+<ul>
+  <li>The <strong>domain name</strong> of the active tab (e.g. <code>example.com</code>)</li>
+  <li>The <strong>visible text content</strong> of the active page (used for semantic analysis via the Groq API)</li>
+</ul>
+<p><strong>Data never collected:</strong></p>
+<table>
+  <tr><th>Data type</th><th>Collected?</th></tr>
+  <tr><td>Your identity, name or email</td><td>Never</td></tr>
+  <tr><td>IP address</td><td>Never</td></tr>
+  <tr><td>Browsing history</td><td>Never</td></tr>
+  <tr><td>Cookies or session tokens</td><td>Never</td></tr>
+  <tr><td>Form data or passwords</td><td>Never</td></tr>
+  <tr><td>Precise geolocation</td><td>Never</td></tr>
+  <tr><td>Pages you visit without clicking "Analyze"</td><td>Never</td></tr>
+</table>
+<p>Audit results (score, sub-scores, recommendations) are saved in <code>chrome.storage.local</code> — they stay on your device and are never uploaded.</p>
 
-  <div class="summary">
-    <h2>✓ Summary — What this policy covers</h2>
-    <ul>
-      <li><strong>Collected:</strong> the domain of the audited page and its text content — only when you click Analyze</li>
-      <li><strong>Processed:</strong> domain and text sent to external APIs to compute your GEO score — ephemeral, no logging</li>
-      <li><strong>Stored:</strong> audit results only, locally in your browser — never on a server</li>
-      <li><strong>Shared:</strong> domain and text relayed to Groq, OpenPageRank, SerpAPI, Reddit, Wikipedia via our proxy — never sold, never used for advertising</li>
-    </ul>
-  </div>
+<h2 id="s3">3. Data Processing</h2>
+<p>When you click "Analyze", data flows as follows:</p>
+<ol>
+  <li>The extension reads the active page's domain and text content.</li>
+  <li>The domain is sent to authority APIs (OpenPageRank, SerpAPI for Perplexity citations, Reddit, Wikipedia) to compute the Authority Signal score.</li>
+  <li>The page text is sent to the Groq API (via the proxy) for semantic analysis.</li>
+  <li>All responses are combined locally by the extension to compute the GEO Score.</li>
+  <li>Results are displayed in the side panel and saved to local storage.</li>
+</ol>
+<p>No data is processed in the background. The extension is inactive until you explicitly trigger an analysis.</p>
 
-  <section id="overview">
-    <h2>1. Overview</h2>
-    <p>GEO Auditor is a free Chrome extension that analyzes the active web page to compute a GEO (Generative Engine Optimization) score — a measure of how likely the page is to be cited by AI search platforms such as ChatGPT, Gemini, Perplexity, and Claude.</p>
-    <p>This policy explains what data is collected, how it is processed, where it is stored, and with whom it is shared — in compliance with Chrome Web Store policies and GDPR.</p>
-    <div class="highlight">GEO Auditor does <strong>not</strong> collect personal data, does <strong>not</strong> track your browsing activity, and does <strong>not</strong> sell any data to third parties — ever.</div>
-  </section>
+<h2 id="s4">4. Score Calculation</h2>
+<p>The GEO Score is a weighted average of five dimensions, each scored 0–100:</p>
+<table>
+  <tr><th>Dimension</th><th>Weight</th><th>What it measures</th></tr>
+  <tr><td>Authority Signal</td><td>30 %</td><td>Domain reputation as seen by AI systems — PageRank, backlinks, citations on Perplexity, Reddit mentions, Wikipedia references</td></tr>
+  <tr><td>Extractability</td><td>25 %</td><td>Ability to extract direct answers — answer clarity, factual density, heading structure, readability</td></tr>
+  <tr><td>Answerability</td><td>20 %</td><td>Question/answer structure, FAQ presence, structured data, Q&A format</td></tr>
+  <tr><td>Crawlability</td><td>15 %</td><td>AI crawler accessibility — robots.txt directives, llms.txt presence, noai directives</td></tr>
+  <tr><td>Semantic Coverage</td><td>10 %</td><td>Semantic depth, named entities, thematic coherence</td></tr>
+</table>
+<p><strong>Authority Signal sub-breakdown (out of 100):</strong></p>
+<table>
+  <tr><th>Source</th><th>Max pts</th><th>Scale</th></tr>
+  <tr><td>OpenPageRank (PageRank integer)</td><td>45 pts</td><td>0–1 → 0–10 · 2–3 → 10–22 · 4–5 → 22–35 · 6+ → 35–45</td></tr>
+  <tr><td>OpenPageRank (external backlinks)</td><td>5 pts</td><td>&lt;100 → 1 · &lt;1k → 2 · &lt;10k → 4 · 10k+ → 5</td></tr>
+  <tr><td>Perplexity citations (via SerpAPI)</td><td>22 pts</td><td>0 → 0 · 1–2 → 8 · 3–5 → 13 · 6–10 → 18 · 11+ → 22</td></tr>
+  <tr><td>Reddit mentions</td><td>16 pts</td><td>0 → 0 · 1–2 → 5 · 3–5 → 10 · 6–10 → 13 · 11+ → 16</td></tr>
+  <tr><td>Wikipedia references</td><td>12 pts</td><td>0 → 0 · 1–2 → 5 · 3–5 → 8 · 6–10 → 10 · 11+ → 12</td></tr>
+</table>
 
-  <section id="collection">
-    <h2>2. Data Collection</h2>
-    <h3>2.1 Data collected when you run an audit</h3>
-    <p>GEO Auditor collects data <strong>only when you explicitly click the "Analyze" button</strong>. Nothing is collected in the background or during normal browsing.</p>
-    <table>
-      <thead><tr><th>Data</th><th>Example</th><th>Why collected</th></tr></thead>
-      <tbody>
-        <tr><td>Domain name of the active page</td><td><code>example.com</code></td><td>Required to query authority and citation APIs</td></tr>
-        <tr><td>Text content of the active page</td><td>Headings, paragraphs, JSON-LD schemas</td><td>Required for semantic and structure analysis</td></tr>
-      </tbody>
-    </table>
-    <h3>2.2 Data stored locally</h3>
-    <p>Audit results (GEO score, dimension scores, recommendations) are saved locally in your browser via <code>chrome.storage.local</code>. This data <strong>never leaves your device</strong>.</p>
-    <h3>2.3 Data NOT collected</h3>
-    <table>
-      <thead><tr><th>Data type</th><th>Collected?</th></tr></thead>
-      <tbody>
-        <tr><td>Personal information (name, email, address)</td><td>❌ Never</td></tr>
-        <tr><td>IP address</td><td>❌ Never</td></tr>
-        <tr><td>Browsing history</td><td>❌ Never</td></tr>
-        <tr><td>Cookies or session data</td><td>❌ Never</td></tr>
-        <tr><td>Form data or passwords</td><td>❌ Never</td></tr>
-        <tr><td>Account information</td><td>❌ Never</td></tr>
-        <tr><td>Precise location</td><td>❌ Never</td></tr>
-      </tbody>
-    </table>
-  </section>
+<h2 id="s5">5. Data Storage</h2>
+<p><strong>On your device:</strong> Audit results (scores, recommendations, analyzed URL) are stored in <code>chrome.storage.local</code>. They persist until you clear the history from the History tab or uninstall the extension. They never leave your device.</p>
+<p><strong>On our servers:</strong> None. The Cloudflare Worker proxy processes requests in memory only. No logs, no database, no persistent storage server-side.</p>
 
-  <section id="processing">
-    <h2>3. Data Processing</h2>
-    <p>Collected data is used <strong>exclusively</strong> to compute the GEO score of the page you chose to analyze. The processing pipeline is:</p>
-    <ol>
-      <li>The domain is sent to the publisher proxy to query authority scoring APIs (OpenPageRank, SerpAPI, Reddit, Wikipedia)</li>
-      <li>The page text is sent to the publisher proxy, then relayed to Groq AI for semantic analysis</li>
-      <li>All API responses are combined by the extension to produce the GEO score</li>
-      <li>The score and recommendations are displayed to you and saved locally</li>
-    </ol>
-    <div class="highlight">Data is processed <strong>only on demand</strong> (when you trigger an audit) and is <strong>never processed in the background</strong>.</div>
-    <p>Data is <strong>not</strong> used for advertising, profiling, or any purpose other than computing your GEO score.</p>
-  </section>
+<h2 id="s6">6. Data Sharing</h2>
+<p>The domain name is shared with the following services solely to compute your GEO Score. No data is sold or used for advertising.</p>
+<table>
+  <tr><th>Service</th><th>Data sent</th><th>Purpose</th><th>Their privacy policy</th></tr>
+  <tr><td>Groq</td><td>Page text</td><td>Semantic scoring (AI analysis)</td><td><a href="https://groq.com/privacy-policy/" target="_blank">groq.com/privacy-policy</a></td></tr>
+  <tr><td>OpenPageRank (Keywords Everywhere)</td><td>Domain name</td><td>PageRank &amp; backlink count</td><td><a href="https://keywordseverywhere.com/privacy-policy.html" target="_blank">keywordseverywhere.com</a></td></tr>
+  <tr><td>SerpAPI</td><td>Domain name</td><td>Perplexity citation count</td><td><a href="https://serpapi.com/privacy" target="_blank">serpapi.com/privacy</a></td></tr>
+  <tr><td>Reddit</td><td>Domain name</td><td>Reddit mention count</td><td><a href="https://www.reddit.com/policies/privacy-policy" target="_blank">reddit.com/policies/privacy-policy</a></td></tr>
+  <tr><td>Wikipedia (MediaWiki API)</td><td>Domain name</td><td>Wikipedia reference count</td><td><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">wikimedia.org/privacy</a></td></tr>
+  <tr><td>Cloudflare Workers</td><td>Domain name, page text (in transit)</td><td>Proxy to protect API keys</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></td></tr>
+</table>
+<p class="note">All API requests are routed through a Cloudflare Worker proxy. This prevents API keys from being exposed in the extension's code. The proxy does not log or store any request data.</p>
 
-  <section id="storage">
-    <h2>4. Data Storage</h2>
-    <h3>4.1 Local storage (your device)</h3>
-    <p>Audit results are stored in <code>chrome.storage.local</code> — a sandboxed browser storage accessible only by GEO Auditor. This data:</p>
-    <ul>
-      <li>Remains exclusively on your device</li>
-      <li>Is never synchronized to external servers</li>
-      <li>Can be deleted at any time from the extension interface</li>
-      <li>Is automatically deleted when you uninstall the extension</li>
-    </ul>
-    <h3>4.2 Server-side storage</h3>
-    <div class="highlight"><strong>No data is stored server-side.</strong> The publisher proxy (Cloudflare Worker) processes requests in memory and discards all data immediately after responding. No logs, no databases, no persistent storage.</div>
-    <h3>4.3 Retention period</h3>
-    <p>Local audit history is retained until you clear it or uninstall the extension. No automatic expiry is applied.</p>
-  </section>
+<h2 id="s7">7. User Consent</h2>
+<p>A consent screen is displayed at first launch, before any data collection occurs. By clicking "I agree — Start using GEO Auditor", you consent to the data processing described in this policy.</p>
+<p>You may withdraw consent at any time by uninstalling the extension. All locally stored data is deleted upon uninstallation.</p>
 
-  <section id="sharing">
-    <h2>5. Data Sharing</h2>
-    <p>GEO Auditor shares data with the following third-party services <strong>solely to compute your GEO score</strong>. Data is relayed through the publisher's Cloudflare Worker proxy.</p>
-    <table>
-      <thead><tr><th>Service</th><th>Data shared</th><th>Purpose</th><th>Privacy policy</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Groq</strong></td><td>Page text content</td><td>Semantic analysis</td><td><a href="https://groq.com/privacy" target="_blank">groq.com/privacy</a></td></tr>
-        <tr><td><strong>OpenPageRank</strong></td><td>Domain name only</td><td>PageRank &amp; backlink score</td><td><a href="https://openpagerank.com/privacy" target="_blank">openpagerank.com/privacy</a></td></tr>
-        <tr><td><strong>SerpAPI</strong></td><td>Domain name only</td><td>Perplexity citation count</td><td><a href="https://serpapi.com/privacy" target="_blank">serpapi.com/privacy</a></td></tr>
-        <tr><td><strong>Reddit API</strong></td><td>Domain name only</td><td>Reddit mention count</td><td><a href="https://www.reddit.com/policies/privacy-policy" target="_blank">reddit.com/privacy</a></td></tr>
-        <tr><td><strong>Wikipedia API</strong></td><td>Domain name only</td><td>Wikipedia inbound links</td><td><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">wikimedia.org/privacy</a></td></tr>
-        <tr><td><strong>Cloudflare Workers</strong></td><td>Domain + page text (in transit)</td><td>Proxy infrastructure — no storage</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacy</a></td></tr>
-      </tbody>
-    </table>
-    <div class="warning"><strong>What we never do:</strong> We never sell data, never share data for advertising purposes, never share data with data brokers, and never share data with any party not listed above.</div>
-  </section>
+<h2 id="s8">8. Offline Mode</h2>
+<p>You can enable <strong>Offline Mode</strong> in Settings at any time. When enabled:</p>
+<ul>
+  <li>No data is sent to any external API.</li>
+  <li>Only local analysis is performed (Semantic Coverage, Extractability, Answerability, Crawlability).</li>
+  <li>The <strong>Authority Signal</strong> dimension is unavailable (marked N/A).</li>
+  <li>An "OFFLINE" badge is displayed in the header.</li>
+</ul>
 
-  <section id="consent">
-    <h2>6. User Consent</h2>
-    <p>On <strong>first launch</strong>, GEO Auditor displays a consent screen that lists all data collected, where it goes, and why — before any analysis begins. You must explicitly click <em>"I agree — Start using GEO Auditor"</em> to proceed.</p>
-    <p>No data is collected or transmitted before this consent is given.</p>
-    <p>You can <strong>withdraw consent</strong> at any time by uninstalling the extension. Uninstalling also removes all locally stored audit history.</p>
-  </section>
+<h2 id="s9">9. Chrome Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why it's needed</th></tr>
+  <tr><td><code>activeTab</code></td><td>Read the content of the tab you chose to analyze</td></tr>
+  <tr><td><code>scripting</code></td><td>Inject the content script to extract page text and structure</td></tr>
+  <tr><td><code>storage</code></td><td>Save audit results and settings locally via <code>chrome.storage.local</code></td></tr>
+  <tr><td><code>sidePanel</code></td><td>Display the audit results in the Chrome side panel</td></tr>
+  <tr><td><code>&lt;all_urls&gt;</code></td><td>Fetch <code>/robots.txt</code> and <code>/llms.txt</code> from any domain to check AI crawler directives</td></tr>
+</table>
 
-  <section id="offline">
-    <h2>7. Offline Mode</h2>
-    <p>GEO Auditor offers an <strong>Offline mode</strong> accessible from the Settings tab. When enabled:</p>
-    <ul>
-      <li>No data is sent to any external API (Groq, OpenPageRank, SerpAPI, Reddit, Wikipedia)</li>
-      <li>Only local on-page analysis is performed (structure, readability, crawlability)</li>
-      <li>The Authority Signal dimension will show as unavailable</li>
-      <li>An "OFFLINE" badge is displayed in the extension header</li>
-    </ul>
-    <p>Offline mode gives you full control over what data leaves your device.</p>
-  </section>
+<h2 id="s10">10. Third-Party Services</h2>
+<p>Each third-party service listed above operates under its own privacy policy. GEO Auditor does not control how those services handle the domain data they receive. All requests are routed through the Cloudflare Worker proxy to avoid exposing API keys in the extension code.</p>
 
-  <section id="permissions">
-    <h2>8. Chrome Permissions</h2>
-    <table>
-      <thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead>
-      <tbody>
-        <tr><td><code>activeTab</code></td><td>Read the URL and content of the active tab when the user triggers an audit. Only active when the user clicks "Analyze".</td></tr>
-        <tr><td><code>scripting</code></td><td>Inject the DOM extraction script into the active page to read headings, schemas, and text content for analysis.</td></tr>
-        <tr><td><code>storage</code></td><td>Save audit results and user consent locally in the browser (<code>chrome.storage.local</code>). No data leaves the device.</td></tr>
-        <tr><td><code>sidePanel</code></td><td>Display the GEO Auditor panel alongside the page without opening a new tab or popup.</td></tr>
-        <tr><td><code>&lt;all_urls&gt;</code></td><td>Fetch <code>/robots.txt</code> and <code>/llms.txt</code> from any domain the user chooses to audit, and communicate with the Cloudflare Worker proxy. The audited domain is selected by the user at runtime, so access to arbitrary URLs is required.</td></tr>
-      </tbody>
-    </table>
-  </section>
+<h2 id="s11">11. Your Rights (GDPR)</h2>
+<table>
+  <tr><th>Right</th><th>How to exercise it</th></tr>
+  <tr><td>Access</td><td>All data is stored locally — open the History tab in the extension to see it</td></tr>
+  <tr><td>Deletion</td><td>Use the "Clear" button in the History tab, or uninstall the extension</td></tr>
+  <tr><td>Objection</td><td>Enable Offline Mode in Settings to stop all external data processing</td></tr>
+  <tr><td>Consent withdrawal</td><td>Uninstall the extension</td></tr>
+  <tr><td>Portability</td><td>Export your audit history as CSV via the "Export CSV" button in the History tab</td></tr>
+</table>
 
-  <section id="third-parties">
-    <h2>9. Third-Party Services</h2>
-    <p>Each third-party service used by GEO Auditor operates under its own privacy policy (linked in Section 5). GEO Auditor is not responsible for the data practices of these services beyond what is described in this policy.</p>
-    <p>All third-party requests are routed through the publisher proxy to avoid exposing API keys in the extension code. The proxy does not add any data to the requests beyond what is described above.</p>
-  </section>
+<h2 id="s12">12. Changes to This Policy</h2>
+<p>We will notify users of material changes within the extension interface. The "Last updated" date at the top of this page will be revised accordingly. Continued use of GEO Auditor after changes are posted constitutes acceptance of the updated policy.</p>
+<p><strong>Changelog:</strong></p>
+<ul>
+  <li><strong>October 2026 (v1.1.0)</strong> — Spanish language added. Three new local signals added (page freshness via Last-Modified header, HTML table count, question-heading ratio) — all computed locally, no data sent to external APIs.</li>
+  <li><strong>March 2026 (v1.0)</strong> — Initial release.</li>
+</ul>
 
-  <section id="rights">
-    <h2>10. Your Rights (GDPR)</h2>
-    <table>
-      <thead><tr><th>Right</th><th>How to exercise it</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Right of access</strong></td><td>View your full audit history in the extension's History tab</td></tr>
-        <tr><td><strong>Right to deletion</strong></td><td>Clear your history at any time from the extension interface, or uninstall the extension</td></tr>
-        <tr><td><strong>Right to object</strong></td><td>Do not click "Analyze" — no data is collected passively. Or enable Offline mode.</td></tr>
-        <tr><td><strong>Right to withdraw consent</strong></td><td>Uninstall the extension</td></tr>
-        <tr><td><strong>Right to data portability</strong></td><td>Your audit data is stored locally and is inherently portable</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section id="changes">
-    <h2>11. Changes to This Policy</h2>
-    <p>This policy may be updated to reflect changes in the extension's functionality or applicable law. In the event of a material change, a notice will be displayed in the extension interface. The "Last updated" date at the top of this page will be revised accordingly.</p>
-    <p>Continued use of the extension after a policy update constitutes acceptance of the revised terms.</p>
-  </section>
-
-  <section id="contact">
-    <h2>12. Contact</h2>
-    <p>For any questions regarding this privacy policy: <a href="mailto:hello@mygrowthbox.com">hello@mygrowthbox.com</a></p>
-  </section>
-
-</main>
-
-<footer>
-  <p>GEO Auditor &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Last updated March 2026</p>
-</footer>
+<h2 id="s13">13. Contact</h2>
+<p>For any privacy-related questions or requests: <a href="mailto:hello@mygrowthbox.com">hello@mygrowthbox.com</a></p>
+<p>Published by <a href="https://mygrowthbox.com" target="_blank">mygrowthbox.com</a></p>
 
 </body>
 </html>
